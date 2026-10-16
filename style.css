@@ -1,0 +1,17 @@
+:root{--bg:#0f1418;--surface:#161d22;--fg:#f3ece1;--muted:#b7aa98;--gold:#e2b56a;--line:#2a333a}
+@media (prefers-color-scheme: light){:root{--bg:#fbf6ee;--surface:#ffffff;--fg:#1d1a16;--muted:#6b6255;--gold:#a8741c;--line:#e7dccb}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 "Inter",system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:48px 16px 64px}
+header .brand{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;font-size:clamp(2.2rem,7vw,3.4rem);letter-spacing:.06em;line-height:1.05;margin:0}
+header .sub{color:var(--gold);letter-spacing:.28em;text-transform:uppercase;font-size:.78rem;margin:.6rem 0 0}
+nav{display:flex;gap:18px;flex-wrap:wrap;margin:28px 0 36px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+nav a{color:var(--muted);text-decoration:none;font-size:.92rem}
+nav a:hover,nav a[aria-current]{color:var(--gold)}
+h2{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;font-size:1.7rem;margin:2.2rem 0 .6rem}
+h3{font-size:1rem;margin:1.6rem 0 .4rem}
+p,li{color:var(--fg)}
+.muted{color:var(--muted)}
+a{color:var(--gold)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:18px 0}
+footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
